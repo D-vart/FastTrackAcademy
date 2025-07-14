@@ -1,84 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Track Academy</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FastTrack Academy - Tecnologia para Iniciantes</title>
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/img/Logo_FTA.png" alt="FastTrack Academy Logo" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#aprendizado">Aprendizado</a></li>
+                <li><a href="#inscricao">Inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <img src="placeholder" alt="logo" class="logo">
-    <ul>
-        <li><a href="#">Menu</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Aprendizado</a></li>
-        <li><a href="">Contato</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-        <h1>Tecnologia para Iniciantes: Comece Sua Jornada Digital Agora!</h1>
-        <p>Um curso completo para quem quer dominar o básico de tecnologia, sem enrolação.</p>
-        <button class="cta-button">Comece agora</button>
-    </section>
-    <section>
-        <div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <h1>Tecnologia para Iniciantes: Comece Sua Jornada Digital Agora!</h1>
+            <p>Um curso completo para quem quer dominar o básico de tecnologia, sem enrolação.</p>
+            <a href="#inscricao" class="cta-button">Quero Aprender Agora</a>
+        </section>
+
+        <!-- Sobre o Curso -->
+        <section class="sobre" id="sobre">
+            <h2>Sobre o Curso</h2>
             <p>
-            O curso “Tecnologia para Iniciantes” é voltado para quem quer começar do 
-            zero no mundo digital. Aprenda os fundamentos da informática, segurança online,
-             uso do celular, aplicativos essenciais e muito mais.
+                O curso “Tecnologia para Iniciantes” é voltado para quem quer começar do zero no mundo digital.
+                Aprenda os fundamentos da informática, segurança online, uso do celular, aplicativos essenciais e muito mais.
             </p>
             <ul class="beneficios">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><i class="fa-solid fa-laptop-code"></i> 100% online</li>
+                <li><i class="fa-solid fa-infinity"></i> Acesso vitalício</li>
+                <li><i class="fa-solid fa-certificate"></i> Certificado incluído</li>
+                <li><i class="fa-brands fa-whatsapp"></i> Suporte por WhatsApp</li>
+            </ul>
+        </section>
+
+        <!-- O que você vai aprender -->
+        <section class="aprendizado" id="aprendizado">
+            <h2>O que você vai aprender</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-computer"></i>
+                    <p>Como usar o computador</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <p>Segurança digital básica</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Aplicativos de produtividade</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>Navegação segura na internet</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-folder"></i>
+                    <p>Organização de arquivos</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Dicas para o dia a dia digital</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="depoimentos" id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="depoimento-card">
+                <blockquote>
+                    “Eu tinha medo até de ligar o computador. Esse curso mudou minha vida!”
+                </blockquote>
+                <p class="autor">— Ana, 53 anos</p>
+            </div>
+            <div class="depoimento-card">
+                <blockquote>
+                    “Consegui meu primeiro trabalho remoto graças ao que aprendi aqui!”
+                </blockquote>
+                <p class="autor">— João, 28 anos</p>
+            </div>
+        </section>
+
+        <!-- Formulário de Inscrição -->
+        <section class="inscricao" id="inscricao">
+            <h2>Inscreva-se</h2>
+            <form id="form-inscricao" novalidate>
+                <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
+                <input type="email" id="email" name="email" placeholder="E-mail" required />
+                <button type="submit">Quero receber o conteúdo gratuito</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="assets/img/Logo_FTA.png" alt="FastTrack Academy Logo" />
+            <ul class="redes-sociais">
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+            <ul class="links-uteis">
+                <li><a href="#">Política de Privacidade</a></li>
             </ul>
         </div>
-        <div>
-            <ul class="topicos">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </section>
-    <section class="depoimentos">
-        <div class="card_depoimento">
+    </footer>
 
-        </div>
-        <div class="card_depoimento">
-
-        </div>
-    </section>
-    <section class="formulario">
-        <form action="">
-            <input type="text" placeholder="Nome completo" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="button" value="Quero me inscrever!">
-        </form>
-    </section>
-    
-  </main>
-  <footer>
-    <img src="placeholder" alt="logo">
-    <ul class="redes_sociais">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <ul class="links_uteis">
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-
-  </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

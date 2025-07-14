@@ -1,0 +1,430 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #111827;
+  background-color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the main content grow to fill available space */
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0070F3;
+  color: white;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00C3A5;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f0f9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  max-width: 700px;
+}
+
+.hero p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #6B7280;
+  max-width: 600px;
+}
+
+.cta-button {
+  background-color: #0070F3;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,112,243,0.3);
+}
+
+.cta-button:hover {
+  background-color: #00C3A5;
+  box-shadow: 0 6px 12px rgba(0,195,165,0.5);
+}
+
+/* Sobre o Curso */
+.sobre {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.sobre p {
+  font-size: 1.25rem;
+  color: #6B7280;
+  max-width: 700px;
+}
+
+.beneficios {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #111827;
+  min-width: 180px;
+}
+
+.beneficios li i {
+  color: #0070F3;
+  font-size: 2rem;
+}
+
+/* O que você vai aprender */
+.aprendizado {
+  background-color: #f9fafb;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.aprendizado h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 900px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+  flex: 1 1 140px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: #00C3A5;
+  margin-bottom: 0;
+}
+
+.card p {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #111827;
+  margin: 0;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,195,165,0.3);
+}
+
+/* Depoimentos */
+.depoimentos {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.depoimentos h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.depoimento-card {
+  background-color: #0070F3;
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  font-style: italic;
+  transition: box-shadow 0.3s ease;
+}
+
+.depoimento-card:hover {
+  box-shadow: 0 12px 24px rgba(0,112,243,0.6);
+}
+
+.depoimento-card blockquote {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.depoimento-card .autor {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+/* Formulário de Inscrição */
+.inscricao {
+  padding: 3rem 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.inscricao h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+#form-inscricao {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+#form-inscricao input[type="text"],
+#form-inscricao input[type="email"] {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#form-inscricao input[type="text"]:focus,
+#form-inscricao input[type="email"]:focus {
+  border-color: #0070F3;
+}
+
+#form-inscricao button {
+  background-color: #00C3A5;
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#form-inscricao button:hover {
+  background-color: #0070F3;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111827;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-content img {
+  height: 50px;
+}
+
+.redes-sociais {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.redes-sociais li a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.redes-sociais li a:hover {
+  color: #00C3A5;
+}
+
+.links-uteis {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.links-uteis li a {
+  color: #6B7280;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.links-uteis li a:hover {
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  main {
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .sobre h2,
+  .aprendizado h2,
+  .depoimentos h2,
+  .inscricao h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
